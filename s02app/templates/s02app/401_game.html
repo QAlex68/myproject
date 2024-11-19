@@ -1,0 +1,13 @@
+<!--Использование базового шаблона уровня модуля-->
+{% extends 's02app/301_base.html' %}
+
+{% block title %} Выберите игру {% endblock %}
+{% block header %} Выберите игру и количество попыток {% endblock %}
+
+{% block content %}
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Отправить">
+    </form>
+{% endblock %}

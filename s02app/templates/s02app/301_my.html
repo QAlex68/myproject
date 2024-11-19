@@ -1,0 +1,12 @@
+<!--Использование базового шаблона уровня модуля-->
+{% extends 's02app/301_base.html' %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+    <div class=container">
+        <h1>{{content|safe}}</h1>
+<!--Опасный вариант только безопасное содержание-->
+        <hr>
+    </div>
+{% endblock %}
